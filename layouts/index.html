@@ -1,8 +1,11 @@
+{{ define "css" }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/home.css">
+{{ end }}
+
 {{ define "main" }}
-    <h1>{{ .Site.Title }} - site</h1>
-    <ul>
-        {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-    </ul>
+    <img id="geo" src = "{{ .Site.BaseURL }}/svg/geo.svg" alt="Geometric shape"/>
+    <div id="tagline-read">
+        <p id="tagline">Quick, Clear<br>Cutting-edge Tech News<br>Swiftly Delivered</p>
+        <a href="{{ .Site.BaseURL }}/article/" id="read">Read</a>
+    </div>
 {{ end }}

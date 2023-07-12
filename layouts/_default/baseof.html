@@ -6,6 +6,8 @@
       {{ .Site.Title }}
     {{ end }}</title>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
+    {{ block "css" . }}
+    {{ end }}
   </head>
   <body>
     {{ partial "header.html" . }}
